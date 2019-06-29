@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli:300,700|Nunito');
 
-body,html {
-    margin:0;
-}
-
-.wrapper {
-    overflow: hidden;
-}
-
 :target::before {
     content: "";
     display: block;
@@ -15,6 +7,14 @@ body,html {
     margin: -80px 0 0; 
 }
 
+body,html {
+    margin:0;
+    overflow-x: hidden;
+}
+
+a, input, button, .form-control {
+    transition: .5s;
+}
 
 .section-title {
     padding-bottom: 40px;
@@ -172,8 +172,8 @@ body,html {
 }
 
 #feature{
-    padding-top: 270px;
-    margin-bottom: 270px; 
+    padding-top: 100px;
+    padding-bottom: 70px;
 }
 
 #home h1 {
@@ -271,7 +271,6 @@ figure figcaption {
     }
 }
 
-
 /*TEAM*/
 
 .social-icon {
@@ -306,7 +305,7 @@ figure figcaption {
 }
 
 #team {
-    padding-top: 100px;
+    padding-top: 120px;
 }
 
 /*COURSES*/
@@ -424,10 +423,19 @@ figure figcaption {
 }
 
 #testimonial {
-    padding: 250px 0 300px 0;
+    padding: 200px 0 300px 0;
 }
 
 /*CONTACT*/
+
+#contact {
+   background-color: #3f51b5; 
+}
+
+#contact h2 {
+    color: #ffffff;
+}
+
 #contact-form {
     padding-top: 30px;
 }
@@ -450,10 +458,6 @@ figure figcaption {
     margin: 10px;
 }
 
-#contact {
-   padding: 200px 0 200px 0;
-   background-color: #3f51b5; 
-}
 
 .contact-image {
     padding-top: 30px;
@@ -473,7 +477,8 @@ figure figcaption {
 }
 
 #map {
-    padding: 120px 0;
+    padding-top: 130px;
+    padding-bottom: 5px;
 }
 
 #footer {
@@ -482,19 +487,20 @@ figure figcaption {
 }
 
 #footer .section-title {
-    color: #ffffff;
+    padding-bottom: 10px;
 }
 
-p {
-    color: #727171;
+#footer h2 {
+    font-size: 25px;
+}
+
+#footer p,
+#footer a {
+    color: #727272;
 }
 
 .footer_menu {
     padding-top: 5px;
-}
-
-.social-icon {
-    padding-top: 15px;
 }
 
 .form-group input {
@@ -517,8 +523,8 @@ p {
 }
 
 .footer_menu ul > li a{
-    display: block;
-    color: #727171;
+    display: inline-block;
+    color: #727272;
     text-align: center;
     padding: 5px 15px 5px 0;
     text-decoration: none;
@@ -529,36 +535,58 @@ p {
     padding-bottom: 10px;
 }
 
-#footer span, #footer a{
-    color:#727171;
-}
-
-
-
-.form-group input[type='submit'] {
-    background: #ffffff;
-    border-radius: 50px;
-    border:0;
-    color: #252020;
-    width: 50%;
-    height: 50px;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.form-group input[type='submit']:hover {
-    background: #3f51b5;
+.footer-info h2 {
     color: #ffffff;
-    border: 0;
 }
 
-.form-group .form-control {
+.newsletter-form .form-control {
     background: transparent;
-    border: 0;
-    border-bottom: 1px solid;
     border-radius: 0;
     box-shadow: none;
-    height: 45px;
-    margin: 10px 0;
-    width: 90%
-}
+    border: 0;
+    border-bottom: 1px solid #303030;
+    height: 50px;
+    margin: 5px 0;
+  }
+
+  .newsletter-form input[type="submit"] {
+    background: transparent;
+    border: 1px solid #f9f9f9;
+    border-radius: 50px;
+    color: #ffffff;
+    display: block;
+    margin-top: 20px;
+    outline: none;
+    width: 50%;
+  }
+
+  .newsletter-form input[type="submit"]:hover {
+    background: #29ca8e;
+    border-color: transparent;
+  }
+
+  .newsletter-form .form-group span {
+    color: #727272;
+    display: block;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  #footer .social-icon li a {
+    border-radius: 100px;
+    color: #29ca8e;
+    font-size: 15px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    margin: 5px 5px 5px 0;
+  }
+
+  #footer .social-icon li a:hover {
+    background: #29ca8e;
+    color: #ffffff;
+  }
