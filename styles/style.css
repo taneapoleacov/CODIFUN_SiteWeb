@@ -587,20 +587,10 @@ figure figcaption {
 
   /*------------ RESPONSIVE ON MOBILE ---------------*/
 
-  @media screen and (max-width: 1170px) {
-    .custom-navbar .navbar-nav.navbar-nav-first {
-      margin-left: inherit;
-    }
-  }
-
   @media only screen and (max-width: 992px) {
     section,
     footer {
       padding: 60px 0;
-    }
-
-    .home-slider .item {
-      background-position: center center;
     }
 
     .feature-thumb,
@@ -609,17 +599,12 @@ figure figcaption {
     .footer-info {
       margin-bottom: 50px;
     }
-
-    .contact-image {
-      margin-top: 50px;
-    }
   }
 
 
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .custom-navbar .nav li a {
-      padding-right: 10px;
-      padding-left: 10px;
+      padding: 0 10px;
     }
   }
 
@@ -634,9 +619,6 @@ figure figcaption {
 
     .custom-navbar {
       background: #ffffff;
-      -webkit-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-      -moz-box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 1px 30px rgba(0, 0, 0, 0.1);
       padding: 10px 0;
       text-align: center;
     }
@@ -650,17 +632,6 @@ figure figcaption {
       padding: 10px;
     }
 
-    .custom-navbar .navbar-brand,
-    .top-nav-collapse .navbar-brand {
-      color: #252525;
-      font-weight: 600;
-    }
-
-    .custom-navbar .nav li a,
-    .top-nav-collapse .nav li a {
-      color: #575757;
-    }
-
     .custom-navbar .navbar-nav.navbar-right li {
       display: inline-block;
     }
@@ -669,7 +640,7 @@ figure figcaption {
       margin-right: 0;
     }
 
-    .footer-info.newsletter-form {
+    .footer-info .newsletter-form {
       margin-bottom: 0;
     }
 
